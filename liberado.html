@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="signin.css" />
+  <link rel="stylesheet" href="liberado.css" />
   <link rel="icon" type="image/png"  href="icone.png"> <!-- Substitua pelo caminho real do seu ícone -->
   <style>
     /* Importação de fontes do Google */
@@ -115,7 +115,7 @@
         window.location.href = 'https://console.firebase.google.com/u/1/project/avalonday-login-1/authentication/users?hl=pt-br';
       } else if ((usuario.toLowerCase() === 'avalonday') || (senha.toLowerCase() === 'avalonday')) {
         // Redirecionar para a página "liberado.html"
-        window.location.href = 'liberado.html';
+        window.location.href = 'telaliberado.html';
       } else {
         // Exibir mensagem de erro caso as credenciais sejam inválidas
         document.getElementById('msgError').innerHTML = 'Credenciais inválidas. Tente novamente.';
@@ -143,7 +143,7 @@
     });
   </script>
 
-  <script src="signin.js"></script>
+  <script src="liberadosignin.js"></script>
   <script src="validations.js"></script>
   <script src="loading.js"></script>
 </body>
