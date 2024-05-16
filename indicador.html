@@ -27,16 +27,32 @@
             background-color: #a80808;
         }
  
-    /* Estilo para a imagem */
+   /* Estilo para a imagem */
+#top-image {
+    position: fixed;
+    top: 50px; /* Ajuste a posição vertical conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 280px; /* Largura da imagem */
+    z-index: 9999; /* Garante que a imagem fique sobre outros elementos */
+    display: block; /* Garante que a imagem seja exibida */
+}
+
+/* Regras de mídia para diferentes tamanhos de tela */
+@media (max-width: 767px) {
     #top-image {
-            position: fixed;
-            top: 50px; /* Ajuste a posição vertical conforme necessário */
-            left: 50%; /* Centraliza horizontalmente */
-            transform: translateX(-50%); /* Centraliza horizontalmente */
-            width: 280px; /* Largura da imagem */
-            z-index: 9999; /* Garante que a imagem fique sobre outros elementos */
-            display: none; /* Começa oculta */
-        }
+        width: 200px; /* Ajuste a largura da imagem para telas menores */
+        top: 30px; /* Ajuste a posição vertical para telas menores */
+    }
+}
+
+@media (max-width: 479px) {
+    #top-image {
+        width: 150px; /* Ajuste a largura da imagem para telas muito pequenas */
+        top: 20px; /* Ajuste a posição vertical para telas muito pequenas */
+    }
+}
+
 
     /* Adicione este estilo para o iframe */
     #second-screen-iframe {
