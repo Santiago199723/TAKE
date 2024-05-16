@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>GERENCIAMENTO AVANLODAY</title>
+        <title>GERENCIAMENTO TAKE MONEY PROFIT</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <style>
@@ -96,7 +96,7 @@
             h1 {
       margin-top: 5px;
       font-size: 36px;
-      color: #4ecebfe2; /* Verde claro */
+      color: #f01515; /* Verde claro */
       text-shadow: 2px 2px 4px rgba(161, 198, 201, 0.3); /* Sombra de texto */
       font-weight: bold; /* Negrito */
     }
@@ -139,7 +139,7 @@
                             <img src="icone2.png" alt="Descrição da Imagem">
                           </div>
                 <span id="loginMenu"><span id="userEmail"></span> <span id="logoutButton"></span></span>
-                <h1 style="margin-top: 5px; font-size: 45px;">GERENCIAMENTO  AVALONDAY</h1>
+                <h1 style="margin-top: 5px; font-size: 45px;">GERENCIAMENTO TAKE MONEY PROFIT</h1>
                 </br>
                 </br>
             </br>
@@ -163,7 +163,7 @@
                                 <td id="finalBalance">- Saldo -<br/><b>R$0.00</b><br/>- Meta esperada -<br/><b>R$0.00 (0.00%)</b></td>
                                 <td id="cicleStatus">Erros Permitidos:<br/>0/0 Erros"</td>
                                 <td id="cicleStatus2">Acertos: 0.00%<br/>0/0 Acertos</td>
-                                <td><input onclick="Sheet_Update(1, true)" id="inputWins" type="button" placeholder="2" value="LIMPAR TUDO" style="background-color: #169a80; border-bottom: 3px solid #0a4337; padding: 16px 0px;!important; width: 100%;" /></td>
+                                <td><input onclick="Sheet_Update(1, true)" id="inputWins" type="button" placeholder="2" value="LIMPAR TUDO" style="background-color: #f01515; border-bottom: 3px solid #310202; padding: 16px 0px;!important; width: 100%;" /></td>
                                 <!-- <td><input id="inputPayoff" type="button" placeholder="1.8" value="SALVAR CICLO" style="background-color: #56db31; border-bottom: 3px solid #56db31;"/></td> -->
                             </tr>
                         </tbody>
@@ -227,7 +227,7 @@
                     color: white;
                     background-color: rgba(0,0,0,0.2);
                     border: none;
-                    border-bottom: 2px solid #19BE9E;
+                    border-bottom: 2px solid #df0b0b;
                     border-radius: 5px;
                     font-size: 14px;
                     text-align: center;
@@ -236,7 +236,7 @@
                 }
 
                 #cicleTable input:focus {
-                    border-bottom: 2px solid #19BE9E;
+                    border-bottom: 2px solid #ce1205;
                 }
 
                 .tableContainer { margin-top: 20px; }
@@ -282,7 +282,7 @@
                 .tableContainer::-webkit-scrollbar-thumb {
                     width: 8px;
                     border-radius: 3px;
-                    background-color: #19BE9E;
+                    background-color: #e61a08;
                 }
                 
 
@@ -491,7 +491,7 @@
                                 cicleStatus.innerHTML = "Erros Permitidos:<br/>"+lossCount+"/"+lossAllowed+" Erros";
                                 cicleStatus2.innerHTML = "Acertos: <b>"+(100 * (inputWins.value / inputTotalTrades.value)).toFixed(2)+"</b>%<br/>"+winsCount+"/"+inputWins.value+" Acertos";
                             }
-                            finalBalance.innerHTML = "- Saldo- <br/><b>R$ "+(winsCount+lossCount == 0 ? parseFloat(inputBalance.value) : lastBalance).toFixed(2)+"</b><br/>- Projeção Atual -<br/><b style=\"color: #36F1CD;\">R$ "+(parseFloat(inputBalance.value) * (1 + (profitTarget / 100))).toFixed(2)+" ("+(profitTarget).toFixed(2)+" %)</b>";
+                            finalBalance.innerHTML = "- Saldo- <br/><b>R$ "+(winsCount+lossCount == 0 ? parseFloat(inputBalance.value) : lastBalance).toFixed(2)+"</b><br/>- Projeção Atual -<br/><b style=\"color: #f01515;\">R$ "+(parseFloat(inputBalance.value) * (1 + (profitTarget / 100))).toFixed(2)+" ("+(profitTarget).toFixed(2)+" %)</b>";
                             
                             if(cicleDone) {
                                 if(lastRow) {

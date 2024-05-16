@@ -23,7 +23,7 @@
   .login-header {
     text-align: center;
     margin-bottom: 20px;
-    color: #13a98b !important; /* Corrigido para verde mais claro */
+    color: #d70808 !important; /* Corrigido para verde mais claro */
     font-family: 'Dancing Script', cursive, sans-serif;
   }
 
@@ -36,7 +36,7 @@
      h1 {
       text-align: center;
       margin-bottom: 20px;
-      color: #83f5df !important; /* Corrigido para verde mais claro */
+      color: #f70f0f !important; /* Corrigido para verde mais claro */
       font-family: 'Dancing Script', cursive, sans-serif;
     }
     
@@ -71,17 +71,17 @@
     .card {
       position: relative;
       z-index: 1;
-      background-color: rgba(8, 43, 37, 0.85); /* Verde escuro com transparência */
+      background-color: rgba(21, 3, 3, 0.85); /* Verde escuro com transparência */
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 0 35px rgba(135, 245, 213, 0.5); /* Contorno luminoso de azul meio verde */
+      box-shadow: 0 0 35px rgba(241, 68, 49, 0.5); /* Contorno luminoso de azul meio verde */
     }
     
     /* Estilo do subtítulo "Entrar" no cartão */
     h1 {
       text-align: center;
       margin-bottom: 20px;
-      color: #21f1d2 !important; /* Corrigido para verde mais claro */
+      color: #e41d1d !important; /* Corrigido para verde mais claro */
       font-family: 'Dancing', cursive;
     }
 
@@ -91,7 +91,7 @@
       padding: 10px;
       display: inline-block;
       border: 0;
-      border-bottom: 2px solid #4cd7bb; /* Verde claro */
+      border-bottom: 2px solid #ea2525; /* Verde claro */
       background-color: transparent;
       outline: none;
       min-width: 180px;
@@ -111,12 +111,12 @@
 
     /* Efeito no campo de entrada quando está em foco */
     .label-float input:focus {
-      border-bottom: 2px solid #35ccae; /* Verde mais claro */
+      border-bottom: 2px solid #ed1f1f; /* Verde mais claro */
     }
 
     /* Estilo do rótulo flutuante quando o campo está em foco ou preenchido */
     .label-float label {
-      color: #6df2d7; /* Verde mais claro */
+      color: #e6190b; /* Verde mais claro */
       pointer-event: none;
       position: absolute;
       top: 0;
@@ -130,14 +130,14 @@
     .label-float input:valid + label {
       font-size: 13px;
       margin-top: 0;
-      color: #71ebd2; /* Verde mais escuro */
+      color: #ec1708; /* Verde mais escuro */
     }
 
     /* Estilo do botão "Entrar" */
     button {
       background-color: transparent;
-      border-color: #3fe6c4; /* Verde mais claro */
-      color: #4ae8c8; /* Corrigido para verde mais escuro */   /* cor da palavra Entrar*/
+      border-color: #f13d3d; /* Verde mais claro */
+      color: #980909; /* Corrigido para verde mais escuro */   /* cor da palavra Entrar*/
       padding: 7px;
       font-weight: bold;
       font-size: 16px;
@@ -151,8 +151,8 @@
 
     /* Efeito no botão ao passar o mouse */
     button:hover {
-      background-color: #39d2b3; /* Verde mais claro */
-      color: #095243; /* Azul mais escuro */
+      background-color: #f03131; /* Verde mais claro */
+      color: #690a0a; /* Azul mais escuro */
     }
 
     /* Alinhamento central */
@@ -170,14 +170,14 @@
 
     /* Estilo do parágrafo abaixo do botão */
     p {
-      color: #19BE9E; /* Verde mais claro */
+      color: #eb3535; /* Verde mais claro */
       font-size: 14px;
       text-align: center;
     }
 
     /* Estilo do link abaixo do parágrafo */
     a {
-      color: #4cebcb; /* Verde mais claro */
+      color: #ef1717; /* Verde mais claro */
       font-weight: bold;
       text-decoration: none;
       transition: all .3s ease-out;
@@ -185,7 +185,7 @@
 
     /* Efeito no link ao passar o mouse */
     a:hover {
-      color: #4cebcb; /* Verde mais claro */
+      color: #f02727; /* Verde mais claro */
     }
 
     /* Estilo do ícone do olho */
@@ -194,14 +194,14 @@
       top: 15px;
       right: 10px;
       cursor: pointer;
-      color: #2dd6b4; /* Verde mais escuro */
+      color: #d0080b; /* Verde mais escuro */
     }
 
     /* Estilo da mensagem de erro */
     #msgError {
       text-align: center;
-      color: #146b5a; /* Verde mais escuro */
-      background-color: rgb(47, 237, 225); /* Verde claro */
+      color: #350202; /* Verde mais escuro */
+      background-color: rgb(248, 30, 30); /* Verde claro */
       padding: 10px;
       border-radius: 4px;
       display: none;

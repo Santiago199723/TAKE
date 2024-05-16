@@ -3,7 +3,7 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-		<title>AVALONDAY&#8211;</title>
+		<title>Take Money Profit - Inteligência Artificial Canadense&#8211;</title>
 <meta name='robots' content='max-image-preview:large' />
 
 <style>
@@ -16,7 +16,7 @@
             padding: 10px 20px;
             font-size: 16px;
             border: none;
-            background-color: #0e6151;
+            background-color: #fb0505;
             color: white;
             cursor: pointer;
             border-radius: 27px;
@@ -24,7 +24,7 @@
             transition: background-color 0.3s;
         }
         .gerenciamento-btn:hover {
-            background-color: #0d3a3e;
+            background-color: #a80808;
         }
  
     /* Estilo para a imagem */
@@ -54,6 +54,11 @@
 
     .red-text {
       color: rgb(244, 15, 15);
+    }
+
+    .rounded-button {
+        border-radius: 30px; /* Ajuste este valor conforme desejado */
+        padding: 10px 20px; /* Ajuste o preenchimento conforme desejado */
     }
   </style>
 </head>
@@ -100,17 +105,22 @@
     margin: 0;
     padding: 0;
     color: #ffffff;
-    /* Adiciona a imagem de fundo */
-    background-image: url('fundook.jpg');
-        /* Torna a imagem mais transparente */
-        opacity: 0.96; /* Valor entre 0 (totalmente transparente) e 1 (totalmente opaca) */
-        /* Centraliza a imagem de fundo */
-        background-position: center;
-        /* Define o tamanho da imagem de fundo como cobrir toda a tela */
-        background-size: cover;
-        /* Fixa a imagem de fundo para que ela não role com o conteúdo da página */
-        background-attachment: fixed;
+ /* Adiciona a imagem de fundo */
+background-image: url('fundook.png');
+/* Torna a imagem mais transparente */
+opacity: 0.96; /* Valor entre 0 (totalmente transparente) e 1 (totalmente opaca) */
+/* Centraliza a imagem de fundo */
+background-position: center;
+/* Define o tamanho da imagem de fundo */
+background-size: 1500px 1500px; /* Largura de 200 pixels e altura de 150 pixels */
+/* Impede que a imagem de fundo se repita */
+background-repeat: no-repeat;
+/* Fixa a imagem de fundo para que ela não role com o conteúdo da página */
+background-attachment: fixed;
+
+
 }
+
 
 #main-box {
     background-color: #201f1f;
@@ -162,7 +172,7 @@
             padding: 10px 20px;
             font-size: 16px;
             border: none;
-            background-color: #186556;
+            background-color: #f21313;
             color: white;
             cursor: pointer;
             border-radius: 5px;
@@ -170,11 +180,11 @@
             transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #0e4439;
+            background-color: #6a0808;
         }
         button.pulsing {
             animation: pulse 1s infinite;
-            background-color: rgb(15, 249, 249);
+            background-color: rgb(176, 41, 17);
             color: black;
         }
     </style>
@@ -185,7 +195,7 @@
      alt="" sizes="(max-width: 80px) 80vw, 80px" />
 
     <div id="main-box">
-        <div id="wide-box">CLIQUE EM ANALISAR PARA IDENTIFICAR UMA ENTRADA</div>
+        <div id="wide-box">CLIQUE EM BUSCAR SINAL PARA IDENTIFICAR UMA ENTRADA</div>
         <div class="result-wrapper">
             <div class="result-box">
                 <div class="result-title">ATIVO:</div>
@@ -205,10 +215,10 @@
            </div>
 		   </div>
         <div id="people-text">0 PESSOAS RECEBERAM ESSA ENTRADA</div>
-        <button id="analysis-button" onclick="startAnalysis()">ANALISAR  ENTRADA  AO VIVO</button>
+        <button id="analysis-button" class="rounded-button" onclick="startAnalysis()">BUSCAR SINAL</button>
     </div>
     <script>
-        var wideBoxTexts = ["ANALISANDO O MERCADO...", "LENDO O GRÁFICO...", "IDENTIFICANDO PADRÕES DE VELAS...", "VERIFICANDO FLUXO DE VELAS...", "IDENTIFICANDO PRICE ACTION...","IDENTIFICANDO UM SINAL...", "IDENTIFIQUEI COM SUCESSO!!"];
+        var wideBoxTexts = ["ANALISANDO O MERCADO...", "LENDO O GRÁFICO...", "IDENTIFICANDO PADRÕES DE VELAS...", "VERIFICANDO FLUXO DE VELAS...", "IDENTIFICANDO PRICE ACTION...","IDENTIFICANDO UM SINAL...", "IDENTIFICADO COM SUCESSO!!"];
         var wideBoxIndex = 0;
         var analysisTimeOut;
     
@@ -222,7 +232,7 @@
                 shouldShowOTC = true;
             }
     
-            var names = ["AUD/JPY", "EUR/USD", "GBP/JPY"];
+            var names = ["AUD/CAD", "EUR/USD", "GBP/JPY", "EUR/JPY", "GBP/USD", "AUDUSD", "USDCAD"];
             if (shouldShowOTC) {
                 names = names.map(name => name + "-OTC");
             }
@@ -332,7 +342,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
 <h1 id="logado"></h1>
 
-<button class="gerenciamento-btn" onclick="sair()">👉 GERENCIAMENTO AVALONDAY</button>
+<button class="gerenciamento-btn" onclick="sair()">👉 GERENCIAMENTO TAKE MONEY PROFIT</button>
 
 <script>
 function sair() {
