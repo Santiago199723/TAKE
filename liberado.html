@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="liberado.css" />
+  <link rel="stylesheet" href="signin.css" />
   <link rel="icon" type="image/png"  href="icone.png"> <!-- Substitua pelo caminho real do seu ícone -->
   <style>
     /* Importação de fontes do Google */
@@ -15,7 +15,7 @@
     .login-header {
       text-align: center;
       margin-bottom: 20px;
-      color: #4bfafa !important; /* Corrigido para verde mais claro */
+      color: #f30606 !important; /* Corrigido para verde mais claro */
       font-family: 'Robot', sans-serif; /* Substitua 'NovaFonte' pela fonte desejada */
     }
 
@@ -113,9 +113,9 @@
       if (usuario.toLowerCase() === 'admin') {
         // Redirecionar para o seu site desejado
         window.location.href = 'https://console.firebase.google.com/u/1/project/avalonday-login-1/authentication/users?hl=pt-br';
-      } else if ((usuario.toLowerCase() === 'avalonday') || (senha.toLowerCase() === 'avalonday')) {
+      } else if ((usuario.toLowerCase() === 'take') || (senha.toLowerCase() === 'avalonday')) {
         // Redirecionar para a página "liberado.html"
-        window.location.href = 'telaliberado.html';
+        window.location.href = 'liberado.html';
       } else {
         // Exibir mensagem de erro caso as credenciais sejam inválidas
         document.getElementById('msgError').innerHTML = 'Credenciais inválidas. Tente novamente.';
@@ -126,7 +126,7 @@
     document.getElementById('usuario').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') { // Verifica se a tecla pressionada é Enter
         const usuario = document.getElementById('usuario').value.trim();
-        if (usuario.toLowerCase() === 'avalonday') { // Verifica se o e-mail é "avalonday"
+        if (usuario.toLowerCase() === 'take') { // Verifica se o e-mail é "avalonday"
           document.getElementById('senha').focus(); // Move o foco para o campo de senha
         }
       }
@@ -136,14 +136,14 @@
     document.getElementById('senha').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') { // Verifica se a tecla pressionada é Enter
         const senha = document.getElementById('senha').value.trim();
-        if (senha.toLowerCase() === 'avalonday') { // Verifica se a senha é "avalonday"
+        if (senha.toLowerCase() === 'take') { // Verifica se a senha é "avalonday"
           document.getElementById('btnEntrar').click(); // Simula o clique no botão de entrar
         }
       }
     });
   </script>
 
-  <script src="liberadosignin.js"></script>
+  <script src="signin.js"></script>
   <script src="validations.js"></script>
   <script src="loading.js"></script>
 </body>
