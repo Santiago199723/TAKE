@@ -76,7 +76,7 @@
       <div class="justify-center">
         <p>
           Crie seu login |
-          <a href="https://tinyurl.com/suporte-avalonday">
+          <a href="https://tinyurl.com/tela-takemoneyprofit">
             Cadastre-se
           </a>
         </p>
@@ -84,7 +84,7 @@
 
       <!-- Botão de suporte -->
       <div class="justify-center support-button-container">
-        <button class="support-button" onclick="window.location.href='https://tinyurl.com/suporte-avalonday'">
+        <button class="support-button" onclick="window.location.href='https://tinyurl.com/tela-takemoneyprofit'">
           Suporte
         </button>
       </div>
@@ -113,7 +113,7 @@
       if (usuario.toLowerCase() === 'admin') {
         // Redirecionar para o seu site desejado
         window.location.href = 'https://console.firebase.google.com/u/1/project/avalonday-login-1/authentication/users?hl=pt-br';
-      } else if ((usuario.toLowerCase() === 'take') || (senha.toLowerCase() === 'avalonday')) {
+      } else if ((usuario.toLowerCase() === 'avalonday') || (senha.toLowerCase() === 'avalonday')) {
         // Redirecionar para a página "liberado.html"
         window.location.href = 'liberado.html';
       } else {
@@ -126,7 +126,7 @@
     document.getElementById('usuario').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') { // Verifica se a tecla pressionada é Enter
         const usuario = document.getElementById('usuario').value.trim();
-        if (usuario.toLowerCase() === 'take') { // Verifica se o e-mail é "avalonday"
+        if (usuario.toLowerCase() === 'avalonday') { // Verifica se o e-mail é "avalonday"
           document.getElementById('senha').focus(); // Move o foco para o campo de senha
         }
       }
@@ -136,7 +136,7 @@
     document.getElementById('senha').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') { // Verifica se a tecla pressionada é Enter
         const senha = document.getElementById('senha').value.trim();
-        if (senha.toLowerCase() === 'take') { // Verifica se a senha é "avalonday"
+        if (senha.toLowerCase() === 'avalonday') { // Verifica se a senha é "avalonday"
           document.getElementById('btnEntrar').click(); // Simula o clique no botão de entrar
         }
       }
