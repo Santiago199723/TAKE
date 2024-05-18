@@ -48,7 +48,7 @@
 
     /* Restante do seu estilo... */
   </style>
-  <title>AVALONDAY</title>
+  <title>TAKE MONEY PROFIT</title>
 </head>
 <body>
   <div class="container">
@@ -113,7 +113,7 @@
       if (usuario.toLowerCase() === 'admin') {
         // Redirecionar para o seu site desejado
         window.location.href = 'https://console.firebase.google.com/u/1/project/avalonday-login-1/authentication/users?hl=pt-br';
-      } else if ((usuario.toLowerCase() === 'avalonday') || (senha.toLowerCase() === 'avalonday')) {
+      } else if ((usuario.toLowerCase() === 'take') || (senha.toLowerCase() === 'take')) {
         // Redirecionar para a página "liberado.html"
         window.location.href = 'liberado.html';
       } else {
@@ -126,7 +126,7 @@
     document.getElementById('usuario').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') { // Verifica se a tecla pressionada é Enter
         const usuario = document.getElementById('usuario').value.trim();
-        if (usuario.toLowerCase() === 'avalonday') { // Verifica se o e-mail é "avalonday"
+        if (usuario.toLowerCase() === 'take') { // Verifica se o e-mail é "avalonday"
           document.getElementById('senha').focus(); // Move o foco para o campo de senha
         }
       }
@@ -136,14 +136,14 @@
     document.getElementById('senha').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') { // Verifica se a tecla pressionada é Enter
         const senha = document.getElementById('senha').value.trim();
-        if (senha.toLowerCase() === 'avalonday') { // Verifica se a senha é "avalonday"
+        if (senha.toLowerCase() === 'take') { // Verifica se a senha é "avalonday"
           document.getElementById('btnEntrar').click(); // Simula o clique no botão de entrar
         }
       }
     });
   </script>
 
-  <script src="signin.js"></script>
+  <script src="liberadosignin.js"></script>
   <script src="validations.js"></script>
   <script src="loading.js"></script>
 </body>
